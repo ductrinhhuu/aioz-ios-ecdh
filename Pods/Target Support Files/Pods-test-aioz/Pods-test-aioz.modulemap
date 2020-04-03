@@ -1,0 +1,6 @@
+module Pods_test_aioz {
+  umbrella header "Pods-test-aioz-umbrella.h"
+
+  export *
+  module * { export * }
+}

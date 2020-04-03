@@ -1,0 +1,577 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		19CC051F73844AB3BE05E8644FF49D90 /* Pods-test-aioz-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2653F3D18748EFE9547D41789DAE0459 /* Pods-test-aioz-dummy.m */; };
+		34E86A362B73BAB25324356DB338FB4C /* Kit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3051B75468192024C8FB3B36D696A0AF /* Kit.swift */; };
+		4674751FF116A6D7B587DEB3836E68A4 /* secp256k1.h in Headers */ = {isa = PBXBuildFile; fileRef = 5710F13C0AF88974C7192AADB0A4964F /* secp256k1.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		47F71AA62246D0B47B15D9160778B225 /* secp256k1_recovery.h in Headers */ = {isa = PBXBuildFile; fileRef = 348C71956669CEA44BEBCA2D7C8DA9EE /* secp256k1_recovery.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5BB50702E1E78103E08099A3732AF61F /* secp256k1_ecdh.h in Headers */ = {isa = PBXBuildFile; fileRef = 51DE69E2FED55752DBC7F0DDA6781513 /* secp256k1_ecdh.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		69BC6F5A0D1FB8A717F2542AB2E9F5A4 /* EllipticCurveEncrypterSecp256k1.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7A418B932406DA388749DB06F6718E /* EllipticCurveEncrypterSecp256k1.swift */; };
+		8E7A541EDB9C4EC636280E21CC331844 /* Secp256k1Kit-Universal.swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E70C76B870DB445735E41FC3CD8C5AFB /* Secp256k1Kit-Universal.swift-dummy.m */; };
+		B481DFA92CD56C0D164CF4B2928D1323 /* Pods-test-aioz-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C546545CBC204F0C816E1663758A085 /* Pods-test-aioz-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B652F0C80B75920456E7A7394342CCA9 /* SignError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A292492E304B5E12E7BDA2AFF51F3A /* SignError.swift */; };
+		E8C0C330198666985926A5532AA26293 /* Secp256k1Kit-Universal.swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E51E858CFFD1B744A4B5D57CBC445798 /* Secp256k1Kit-Universal.swift-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		88657F1685F3124F479A3C28CBC64E67 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C1543BB3630350643ECADE4A561D76EB;
+			remoteInfo = "Secp256k1Kit-Universal.swift";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		20CA54871D718950B7A4C3EC5B33877D /* Pods-test-aioz-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-test-aioz-acknowledgements.markdown"; sourceTree = "<group>"; };
+		2653F3D18748EFE9547D41789DAE0459 /* Pods-test-aioz-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-test-aioz-dummy.m"; sourceTree = "<group>"; };
+		2C546545CBC204F0C816E1663758A085 /* Pods-test-aioz-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-test-aioz-umbrella.h"; sourceTree = "<group>"; };
+		3051B75468192024C8FB3B36D696A0AF /* Kit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Kit.swift; path = Secp256k1Kit/Classes/Kit.swift; sourceTree = "<group>"; };
+		348C71956669CEA44BEBCA2D7C8DA9EE /* secp256k1_recovery.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = secp256k1_recovery.h; path = Secp256k1Kit/Libraries/ios/include/secp256k1_recovery.h; sourceTree = "<group>"; };
+		51DE69E2FED55752DBC7F0DDA6781513 /* secp256k1_ecdh.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = secp256k1_ecdh.h; path = Secp256k1Kit/Libraries/ios/include/secp256k1_ecdh.h; sourceTree = "<group>"; };
+		5710F13C0AF88974C7192AADB0A4964F /* secp256k1.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = secp256k1.h; path = Secp256k1Kit/Libraries/ios/include/secp256k1.h; sourceTree = "<group>"; };
+		59EC47C85E8FDE061B1AAEBB34C0E72F /* Pods-test-aioz-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-test-aioz-acknowledgements.plist"; sourceTree = "<group>"; };
+		64514F2B52B1DC1B6B04C340ABED8E87 /* Pods-test-aioz.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-test-aioz.release.xcconfig"; sourceTree = "<group>"; };
+		68A292492E304B5E12E7BDA2AFF51F3A /* SignError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SignError.swift; path = Secp256k1Kit/Classes/Models/SignError.swift; sourceTree = "<group>"; };
+		8AE6D260914B59672A32B221903C3A3E /* Secp256k1Kit-Universal.swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Secp256k1Kit-Universal.swift.modulemap"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		AC7A418B932406DA388749DB06F6718E /* EllipticCurveEncrypterSecp256k1.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EllipticCurveEncrypterSecp256k1.swift; path = Secp256k1Kit/Classes/EllipticCurveEncrypterSecp256k1.swift; sourceTree = "<group>"; };
+		ADA539779348E71AA7E1B063A93E569C /* Secp256k1Kit-Universal.swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Secp256k1Kit-Universal.swift.debug.xcconfig"; sourceTree = "<group>"; };
+		ADFAF50D6018547075F53680FE4516A4 /* libPods-test-aioz.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-test-aioz.a"; path = "libPods-test-aioz.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6F746D0BB2D34289A122D3ABAD19B6C /* Secp256k1Kit-Universal.swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Secp256k1Kit-Universal.swift-prefix.pch"; sourceTree = "<group>"; };
+		BB939977C87FEA63A9FD1B6948E78368 /* libSecp256k1Kit-Universal.swift.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libSecp256k1Kit-Universal.swift.a"; path = "libSecp256k1Kit-Universal.swift.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C487E15AE34DD5A9C46D65B334CE11FA /* Pods-test-aioz.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-test-aioz.modulemap"; sourceTree = "<group>"; };
+		DA58657AE78D3C2B45BB765D0EA3B41C /* libsecp256k1.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libsecp256k1.a; path = Secp256k1Kit/Libraries/ios/lib/libsecp256k1.a; sourceTree = "<group>"; };
+		E1098123EBFB4899ABE53A1D3FA98521 /* Pods-test-aioz.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-test-aioz.debug.xcconfig"; sourceTree = "<group>"; };
+		E51E858CFFD1B744A4B5D57CBC445798 /* Secp256k1Kit-Universal.swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Secp256k1Kit-Universal.swift-umbrella.h"; sourceTree = "<group>"; };
+		E70C76B870DB445735E41FC3CD8C5AFB /* Secp256k1Kit-Universal.swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Secp256k1Kit-Universal.swift-dummy.m"; sourceTree = "<group>"; };
+		FA63A6D678345A4A019F10E62296B330 /* Secp256k1Kit-Universal.swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Secp256k1Kit-Universal.swift.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		17C343049EB94149E0D58BF9BDC2D3DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		211F93891D147EC342019FB2C5A55DE5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0B8D80629D9DDC1CC7D3AA6FA0A0F87C /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				458F4A18923E52EDD579D07476BEC6C4 /* Pods-test-aioz */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		368DA5DC3C9D7D9474DE3F9F36CC58B3 /* Secp256k1Kit-Universal.swift */ = {
+			isa = PBXGroup;
+			children = (
+				AC7A418B932406DA388749DB06F6718E /* EllipticCurveEncrypterSecp256k1.swift */,
+				3051B75468192024C8FB3B36D696A0AF /* Kit.swift */,
+				5710F13C0AF88974C7192AADB0A4964F /* secp256k1.h */,
+				51DE69E2FED55752DBC7F0DDA6781513 /* secp256k1_ecdh.h */,
+				348C71956669CEA44BEBCA2D7C8DA9EE /* secp256k1_recovery.h */,
+				68A292492E304B5E12E7BDA2AFF51F3A /* SignError.swift */,
+				57892851F5CE1742DE5DF993652B9EC0 /* Frameworks */,
+				3D4AA1AE3375AB47AF8E9FA5EAE91C4B /* Support Files */,
+			);
+			name = "Secp256k1Kit-Universal.swift";
+			path = "Secp256k1Kit-Universal.swift";
+			sourceTree = "<group>";
+		};
+		3D4AA1AE3375AB47AF8E9FA5EAE91C4B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8AE6D260914B59672A32B221903C3A3E /* Secp256k1Kit-Universal.swift.modulemap */,
+				E70C76B870DB445735E41FC3CD8C5AFB /* Secp256k1Kit-Universal.swift-dummy.m */,
+				B6F746D0BB2D34289A122D3ABAD19B6C /* Secp256k1Kit-Universal.swift-prefix.pch */,
+				E51E858CFFD1B744A4B5D57CBC445798 /* Secp256k1Kit-Universal.swift-umbrella.h */,
+				ADA539779348E71AA7E1B063A93E569C /* Secp256k1Kit-Universal.swift.debug.xcconfig */,
+				FA63A6D678345A4A019F10E62296B330 /* Secp256k1Kit-Universal.swift.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Secp256k1Kit-Universal.swift";
+			sourceTree = "<group>";
+		};
+		458F4A18923E52EDD579D07476BEC6C4 /* Pods-test-aioz */ = {
+			isa = PBXGroup;
+			children = (
+				C487E15AE34DD5A9C46D65B334CE11FA /* Pods-test-aioz.modulemap */,
+				20CA54871D718950B7A4C3EC5B33877D /* Pods-test-aioz-acknowledgements.markdown */,
+				59EC47C85E8FDE061B1AAEBB34C0E72F /* Pods-test-aioz-acknowledgements.plist */,
+				2653F3D18748EFE9547D41789DAE0459 /* Pods-test-aioz-dummy.m */,
+				2C546545CBC204F0C816E1663758A085 /* Pods-test-aioz-umbrella.h */,
+				E1098123EBFB4899ABE53A1D3FA98521 /* Pods-test-aioz.debug.xcconfig */,
+				64514F2B52B1DC1B6B04C340ABED8E87 /* Pods-test-aioz.release.xcconfig */,
+			);
+			name = "Pods-test-aioz";
+			path = "Target Support Files/Pods-test-aioz";
+			sourceTree = "<group>";
+		};
+		57892851F5CE1742DE5DF993652B9EC0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DA58657AE78D3C2B45BB765D0EA3B41C /* libsecp256k1.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5D028E9157F70DF17F63CC163441F71F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ADFAF50D6018547075F53680FE4516A4 /* libPods-test-aioz.a */,
+				BB939977C87FEA63A9FD1B6948E78368 /* libSecp256k1Kit-Universal.swift.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AEB133A98DC2E1D049EA5AD6AB4AD550 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				368DA5DC3C9D7D9474DE3F9F36CC58B3 /* Secp256k1Kit-Universal.swift */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D89477F20FB1DE18A04690586D7808C4 /* Frameworks */,
+				AEB133A98DC2E1D049EA5AD6AB4AD550 /* Pods */,
+				5D028E9157F70DF17F63CC163441F71F /* Products */,
+				0B8D80629D9DDC1CC7D3AA6FA0A0F87C /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D89477F20FB1DE18A04690586D7808C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		AA2D7B1EAEB878A22066C6018636D6FF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4674751FF116A6D7B587DEB3836E68A4 /* secp256k1.h in Headers */,
+				5BB50702E1E78103E08099A3732AF61F /* secp256k1_ecdh.h in Headers */,
+				47F71AA62246D0B47B15D9160778B225 /* secp256k1_recovery.h in Headers */,
+				E8C0C330198666985926A5532AA26293 /* Secp256k1Kit-Universal.swift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7B2F6E298614EACD5B5CE02BAE54ED5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B481DFA92CD56C0D164CF4B2928D1323 /* Pods-test-aioz-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		7B1A22DA5BFD66D9CEA22B1F58E0C7A8 /* Pods-test-aioz */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 78FFE4A81856996AAD152508D4EF65A8 /* Build configuration list for PBXNativeTarget "Pods-test-aioz" */;
+			buildPhases = (
+				F7B2F6E298614EACD5B5CE02BAE54ED5 /* Headers */,
+				6E87C317E672B0DF4B79310E3BCD7870 /* Sources */,
+				211F93891D147EC342019FB2C5A55DE5 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				25C3DDCEAFB360887D06B9BECD921373 /* PBXTargetDependency */,
+			);
+			name = "Pods-test-aioz";
+			productName = "Pods-test-aioz";
+			productReference = ADFAF50D6018547075F53680FE4516A4 /* libPods-test-aioz.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		C1543BB3630350643ECADE4A561D76EB /* Secp256k1Kit-Universal.swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84A7778B5F422BDCBD73F61091E42691 /* Build configuration list for PBXNativeTarget "Secp256k1Kit-Universal.swift" */;
+			buildPhases = (
+				AA2D7B1EAEB878A22066C6018636D6FF /* Headers */,
+				A84C132BFACC4FE5460C280F4911F16C /* Sources */,
+				17C343049EB94149E0D58BF9BDC2D3DC /* Frameworks */,
+				D0360B196C5AFE881BA761B9800D3835 /* Copy generated compatibility header */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Secp256k1Kit-Universal.swift";
+			productName = "Secp256k1Kit-Universal.swift";
+			productReference = BB939977C87FEA63A9FD1B6948E78368 /* libSecp256k1Kit-Universal.swift.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 5D028E9157F70DF17F63CC163441F71F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7B1A22DA5BFD66D9CEA22B1F58E0C7A8 /* Pods-test-aioz */,
+				C1543BB3630350643ECADE4A561D76EB /* Secp256k1Kit-Universal.swift */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D0360B196C5AFE881BA761B9800D3835 /* Copy generated compatibility header */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h",
+				"${PODS_ROOT}/Headers/Public/Secp256k1Kit/Secp256k1Kit-Universal.swift.modulemap",
+				"${PODS_ROOT}/Headers/Public/Secp256k1Kit/Secp256k1Kit-Universal.swift-umbrella.h",
+			);
+			name = "Copy generated compatibility header";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap",
+				"${BUILT_PRODUCTS_DIR}/Secp256k1Kit-Universal.swift-umbrella.h",
+				"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "COMPATIBILITY_HEADER_PATH=\"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h\"\nMODULE_MAP_PATH=\"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap\"\n\nditto \"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h\" \"${COMPATIBILITY_HEADER_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/Secp256k1Kit/Secp256k1Kit-Universal.swift.modulemap\" \"${MODULE_MAP_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/Secp256k1Kit/Secp256k1Kit-Universal.swift-umbrella.h\" \"${BUILT_PRODUCTS_DIR}\"\nprintf \"\\n\\nmodule ${PRODUCT_MODULE_NAME}.Swift {\\n  header \\\"${COMPATIBILITY_HEADER_PATH}\\\"\\n  requires objc\\n}\\n\" >> \"${MODULE_MAP_PATH}\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6E87C317E672B0DF4B79310E3BCD7870 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19CC051F73844AB3BE05E8644FF49D90 /* Pods-test-aioz-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A84C132BFACC4FE5460C280F4911F16C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69BC6F5A0D1FB8A717F2542AB2E9F5A4 /* EllipticCurveEncrypterSecp256k1.swift in Sources */,
+				34E86A362B73BAB25324356DB338FB4C /* Kit.swift in Sources */,
+				8E7A541EDB9C4EC636280E21CC331844 /* Secp256k1Kit-Universal.swift-dummy.m in Sources */,
+				B652F0C80B75920456E7A7394342CCA9 /* SignError.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		25C3DDCEAFB360887D06B9BECD921373 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Secp256k1Kit-Universal.swift";
+			target = C1543BB3630350643ECADE4A561D76EB /* Secp256k1Kit-Universal.swift */;
+			targetProxy = 88657F1685F3124F479A3C28CBC64E67 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		161EC941494CB38F3AD4CC9CB7A6427C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1098123EBFB4899ABE53A1D3FA98521 /* Pods-test-aioz.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-test-aioz/Pods-test-aioz.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5C94CE1E97EE5942E83628B36F2DFF9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64514F2B52B1DC1B6B04C340ABED8E87 /* Pods-test-aioz.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-test-aioz/Pods-test-aioz.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8D494DFBDE58D3D9094E5DC32AFFC840 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA63A6D678345A4A019F10E62296B330 /* Secp256k1Kit-Universal.swift.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/Secp256k1Kit-Universal.swift/Secp256k1Kit-Universal.swift-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MODULEMAP_FILE = "Headers/Public/Secp256k1Kit/Secp256k1Kit-Universal.swift.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = Secp256k1Kit;
+				PRODUCT_NAME = "Secp256k1Kit-Universal.swift";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		939F1A8F6BCEB7F9F64D9EEE50CAE014 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		BEA342319B7A97F7ECC5BA83C26DA449 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADA539779348E71AA7E1B063A93E569C /* Secp256k1Kit-Universal.swift.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/Secp256k1Kit-Universal.swift/Secp256k1Kit-Universal.swift-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MODULEMAP_FILE = "Headers/Public/Secp256k1Kit/Secp256k1Kit-Universal.swift.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = Secp256k1Kit;
+				PRODUCT_NAME = "Secp256k1Kit-Universal.swift";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ECB437504DF805BD96CAABF97400B526 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				939F1A8F6BCEB7F9F64D9EEE50CAE014 /* Debug */,
+				ECB437504DF805BD96CAABF97400B526 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		78FFE4A81856996AAD152508D4EF65A8 /* Build configuration list for PBXNativeTarget "Pods-test-aioz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				161EC941494CB38F3AD4CC9CB7A6427C /* Debug */,
+				5C94CE1E97EE5942E83628B36F2DFF9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84A7778B5F422BDCBD73F61091E42691 /* Build configuration list for PBXNativeTarget "Secp256k1Kit-Universal.swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEA342319B7A97F7ECC5BA83C26DA449 /* Debug */,
+				8D494DFBDE58D3D9094E5DC32AFFC840 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

@@ -1,0 +1,16 @@
+PODS:
+  - Secp256k1Kit-Universal.swift (1.0.1)
+
+DEPENDENCIES:
+  - Secp256k1Kit-Universal.swift
+
+SPEC REPOS:
+  trunk:
+    - Secp256k1Kit-Universal.swift
+
+SPEC CHECKSUMS:
+  Secp256k1Kit-Universal.swift: 670e2cfc7ffa19c98ebca5f700d14b4c94ade99b
+
+PODFILE CHECKSUM: 7a4c5ed872f89e3589107003c6219c4feafd4b9f
+
+COCOAPODS: 1.9.1
